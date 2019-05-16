@@ -1,6 +1,6 @@
 WITH last_touch AS (
 	SELECT user_id, 
-		MAX(timestamp) as last_touch_at
+		MAX(timestamp) AS last_touch_at
 	FROM page_visits
 	GROUP BY user_id)
 SELECT lt.user_id,
