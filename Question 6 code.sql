@@ -1,6 +1,6 @@
 WITH last_touch AS (
 	SELECT user_id, 
-	MAX(timestamp) as last_touch_at
+	MAX(timestamp) AS last_touch_at
 	FROM page_visits
 	WHERE page_name = '4 - purchase'
 	GROUP BY user_id)
